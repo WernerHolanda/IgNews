@@ -1,11 +1,18 @@
-import styles from '../styles/home.module.scss'
+//essa é a pagina home
+
+// Head é um component react q eu posso colocar em qql lugar da tela.
+import Head from 'next/head';
 
 export default function Home() {
     return (
-        <h1 className={styles.title}>
-            Hello
-            <span>World</span>
-            
+        <>
+        <Head>
+            <title> Início | ig.news </title>
+        </Head>
+
+        <h1>  
+            Hello World
         </h1>
+        </>
     )
 }
