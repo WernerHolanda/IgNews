@@ -1,0 +1,28 @@
+
+
+.subscribeButton{
+   
+background: #eba417;
+height: 3rem;
+border-radius: 3rem;
+margin-top: 2rem;
+
+width: 15rem;
+
+border-radius: 3rem;
+
+border: 0;
+padding: 0 1.5rem;
+
+display: flex;
+align-items: center;
+justify-content:center;
+
+font-weight: bold;
+
+transition: 0.2s;
+
+&:hover {
+    filter: brightness(0.8);
+}
+}

@@ -1,0 +1,43 @@
+.contentContainer {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    height: calc(100vh - 5rem);
+
+    display: flex; //um ao lado do outro
+    align-items: center; //coloca tudo no meio de cima para baixo;
+    justify-content: space-between; 
+  
+    span {
+        color: var(--cyan-500);
+    }
+}
+
+.hero {
+    max-width: 600px;
+    
+    > span {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--cyan-500);
+    }
+
+    h1 {
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+        font-weight: 900;
+        margin-top: 2.5rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        line-height: 2.25rem; //tmnho da linha eisso aumenta o esmpaçamento entre linhas.
+        margin-top: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+//button.fisrt-child {
+//    margin-bottom: 2rem;
+//}
+
