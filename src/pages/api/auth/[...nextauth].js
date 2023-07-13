@@ -14,20 +14,28 @@ export const authOptions = {
     }),
     // ...add more providers here
   ],
+
   callbacks: {
-    async signIn(user, account, profile) {
+    async signIn(user, account, profile, credentials) {
       const { email } = user
       
-      await fauna.query(
-        q.Create (
-          q.Collection('users'),
-          { data: { email }}
-        )
-      )
-      
+      try {
+        await fauna.query(
+            q.Create(
+              q.Collection('users'),
+              { data: { email } }
+            ),
+
+            )
+          
+             
+          
       return true
+    } catch {
+      return false
     }
-  }
+  },
+} 
 
 }
 export default NextAuth(authOptions)

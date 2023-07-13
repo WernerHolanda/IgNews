@@ -23,6 +23,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/pages/_app.jsx", "src/pages/api/auth/[...nextauth].js", "src/services/fauna.Js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/pages/_app.jsx", "src/pages/api/auth/[...nextauth].js", "src/services/fauna.Js", "src/pages/api/subscribe.js"],
   "exclude": ["node_modules"]
 }
