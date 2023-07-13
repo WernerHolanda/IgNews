@@ -24,18 +24,15 @@ export const authOptions = {
             q.Create(
               q.Collection('users'),
               { data: { email } }
-            ),
-
+              )
             )
-          
-             
-          
-      return true
-    } catch {
-      return false
-    }
-  },
-} 
 
-}
+              return true
+            } catch (error) { 
+              console.log(error)
+              return false
+            }
+          },
+        }, 
+      }
 export default NextAuth(authOptions)
